@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+  <title id = "title">Pomdoro timer</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="design.css">
+  <script src="logic.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class = "container">
+
+    <!-- title  -->
+    <div class = "row">
+      <div class = "col-md-6 col-md-offset-3">
+        <h1 id = "title"> Pomdoro timer </h1>
+      </div>
+    </div>
+    <!-- end of title -->
+
+    <!-- Pomdoro clock container -->
+    <div class = "row">
+      <div class = "col-md-6 col-md-offset-3 clock_container">
+        <h1 id = "session_name">Working session countdown</h1>
+        <h1 id = "countdown">25:00</h1>
+      </div>
+    </div>
+    <!-- end of Pomdoro clock container -->
+
+    <!-- set break time and set working time container -->
+    <div class = "row set_time_container">
+      <div class = "col-md-10 col-md-offset-1">
+
+        <div class = "col-md-3 col-md-offset-1" id = "set_break">
+          <h3>Set break time: </h3>
+          <h1 id = "disp_break_time"> 5:00 </h1>
+          <div class = "col-md-2 col-md-offset-2 timebtn">
+            <button id = "add_break_time"> + </button>
+          </div>
+          <div class = "col-md-2 col-md-offset-2 timebtn">
+            <button id = "sub_break_time"> - </button>
+          </div>
+        </div>
+
+        <div class = "col-md-2 col-md-offset-1 timeflowbtn">
+          <button id = "startbtn"> Start </button>
+          <button id = "resetbtn"> Reset </button>
+        </div>
+
+        <div class = "col-md-3 col-md-offset-1" id = "set_work">
+          <h3>Set working time: </h3>
+            <h1 id = "disp_work_time"> 25:00 </h1>
+            <div class = "col-md-2 col-md-offset-2 timebtn">
+              <button id = "add_work_time"> + </button>
+            </div>
+            <div class = "col-md-2 col-md-offset-2 timebtn">
+              <button id = "sub_work_time"> - </button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end of set break time and set working time container -->
+
+  </div>
+
+</body>
+
+</html>
